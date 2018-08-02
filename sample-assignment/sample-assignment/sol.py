@@ -6,7 +6,7 @@ def main():
     """
     This function is the main function
     """
-    data = input()
+    data = eval(input())
     print(int(data[0]) + int(data[1]))
 
 if __name__ == "__main__":
