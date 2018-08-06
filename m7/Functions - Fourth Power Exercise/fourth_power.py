@@ -18,7 +18,7 @@ def fourthPower(x):
     '''
     x: int or float.
     '''
-    return square(x)*square(x)
+    return square(square(x))
    
 
 def main():
