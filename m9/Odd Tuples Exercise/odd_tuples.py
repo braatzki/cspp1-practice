@@ -9,12 +9,12 @@ def oddTuples(aTup):
     
     returns: tuple, every other element of aTup. 
     '''
-    words = ()
-    for t, value in enumerate(aTup):
-        if t%2 == 0:
-            words = words + (aTup[t],)
-    return words
-
+    # words = ()
+    # for t, value in enumerate(aTup):
+    #     if t%2 == 0:
+    #         words = words + (value,)
+    # return words
+    return aTup[::2]
 
 def main():
     data = input()
