@@ -2,6 +2,13 @@
 #Implement a function that converts the given testList = [1, -4, 8, -9] into [2, -3, 9, -8]
 
 
+def apply_to_each(L, f):
+    for i in range(len(L)):
+        L[i] = f(L[i])
+    return L
+
+def inc(n_inp):
+    return n_inp + 1
 
 def main():
     data = input()
