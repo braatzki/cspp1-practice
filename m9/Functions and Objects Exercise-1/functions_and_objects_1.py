@@ -3,15 +3,14 @@
 
 
 def apply_to_each(L, f):
-    for i in range(len(L)):
-        L[i] = f(L[i])
+    for [i, j] in enumerate(L):
+        L[i] = f(j)
     return L
 
 def abs(n_inp):
-	if n_inp >= 0:
-		return n_inp
-	elif n_inp < 0:
-		return n_inp*-1
+    if n_inp >= 0:
+        return n_inp
+    return n_inp*-1
 
 def main():
     data = input()
