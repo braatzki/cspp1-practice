@@ -3,15 +3,21 @@
 
 
 def apply_to_each(L, f):
-    
+    for [i, j] in enumerate(L):
+        L[i] = f(j)
+    return L
+
+def square(n_inp):
+    return n_inp**2
+
     
 def main():
     data = input()
     data = data.split()
     list1 = []
-    for j in l:
+    for j in data:
         list1.append(int(j))
-    apply_to_each(list1, square)
+    print(apply_to_each(list1, square))
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
