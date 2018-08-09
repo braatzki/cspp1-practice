@@ -10,6 +10,13 @@ def biggest(aDict):
     '''
     # Your Code Here
    
+    max_dict = 0
+    for i in aDict:
+        temp_dict = len(aDict[i])
+        if temp_dict > max_dict:
+            max_dict = temp_dict
+            ele_num = i
+    return(ele_num)
     
 
 def main():
