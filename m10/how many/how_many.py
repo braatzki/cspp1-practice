@@ -9,6 +9,11 @@ def how_many(aDict):
     returns: int, how many values are in the dictionary.
     '''
     # Your Code Here
+    count = 0
+    for word in aDict.keys():
+        for i in aDict[word]:
+            count += 1
+    return count
 
     
 
@@ -23,6 +28,7 @@ def main():
        else:
            aDict[l[0][0]].append(l[1])
    print(how_many(aDict))
+   print(aDict)
 
 if __name__== "__main__":
    main()
