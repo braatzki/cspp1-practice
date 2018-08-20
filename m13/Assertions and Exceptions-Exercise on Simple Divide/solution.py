@@ -4,7 +4,7 @@ def simple_divide(item, denom):
     try:
         return item/denom
     except ZeroDivisionError:
-        return 0.0
+        return 0
 
 def fancy_divide(list_of_numbers, index):
     '''fucntion'''
