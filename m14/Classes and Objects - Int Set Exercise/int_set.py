@@ -7,6 +7,7 @@ class intSet(object):
     The value is represented by a list of ints, self.vals.
     Each int in the set occurs in self.vals exactly once."""
 
+
     def __init__(self):
         """Create an empty set of integers"""
         self.vals = []
@@ -44,7 +45,18 @@ class intSet(object):
 
 # Hint: look through the Python docs to figure out what you'll need to solve this problem.
     def intersect(self, other):
-        
+        common_ele = intSet(self + other)
+        intersect_l = []
+        for _, j in enumerate(common_ele):
+            if self.member(j) and other.member(j):
+                intersect_l += [common_ele]
+        return intSet(intersect_l)
+
+    def len(self):
+    count = 0
+    for _ in self.vals:
+            count += 1
+    return count
         
 def main():
     setA = intSet()
